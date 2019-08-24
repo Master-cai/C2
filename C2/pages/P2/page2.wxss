@@ -1,0 +1,7 @@
+/* pages/P2/page2.wxss */
+.container{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

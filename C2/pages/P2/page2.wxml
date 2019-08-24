@@ -1,0 +1,23 @@
+<!--pages/P2/page2.wxml-->
+<text>pages/P2/page2.wxml</text>
+<button bindtap="btnTap">Click</button>
+<button bindtap="changeData">{{ today }}</button>
+<view bindtap="changeData">
+    {{today}}
+</view>
+<view wx:for="{{array}}" wx:for-index="stuID" wx:for-item="stuName" wx:key="{{stuID}}">
+    element {{stuID}}: {{stuName}}
+</view>
+<!--
+<view wx:for="{{count}}" wx:for-item="i" wx:key="{{index}}">
+    <view wx:for="{{count}}" wx:for-item="j" wx:key="{{j}}">
+        {{i}} X {{j}} = {{i*j}}
+    </view>
+</view>
+-->
+<view class="container">
+    <!-- <button wx:for="{{array}}">{{item}}</button> -->
+    <button bindtap='getTestData'>1</button>
+    <button>2</button>
+    <button>3</button>
+</view>

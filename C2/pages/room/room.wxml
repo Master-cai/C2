@@ -1,0 +1,23 @@
+<!--pages/room/room.wxml-->
+<view class='head-title'>
+<view class='titles'>
+  <view class='title'>{{movieName}}\n</view>
+  <view class='times'>{{movieTimes}}</view>
+</view>
+<view class='line'></view>
+</view>
+<view class='head-seat'>
+<view class='seat'>
+<view class='seat1'><image src='../img/seat1.png'></image> <text decode="{{true}}">&nbsp;可选</text></view>
+<view class='seat2'><image src='../img/seat2.png'></image>  <text decode="{{true}}">&nbsp;已占</text></view>
+</view>
+</view>
+<view class='seat-change'>
+<view class='seat-change1'>
+<block wx:for="{{seatArr}}" wx:for-item="items" wx:for-index="row" wx:key="this">
+    <block wx:for="{{items}}" wx:for-item="item" wx:for-index="col" wx:key="this">
+        <image src='{{item}}' data-index="{{row}}{{col}}" style='margin-right:30rpx;margin-bottom:20rpx;' bindtap='seatChange'></image>
+    </block>
+</block>
+</view>
+</view>
